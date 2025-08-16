@@ -17,7 +17,7 @@ jobs:
         # https://github.com/actions/checkout
       - uses: actions/checkout@v3
         # Step's name
-      - run: echo composer -v
+      - run: composer -v
       - name: Setup PHP
         # Action gives to setup the PHP environment to test application
         # https://github.com/shivammathur/setup-php
@@ -25,7 +25,7 @@ jobs:
         with:
           # Specify the PHP version
           php-version: '8.3'
-      - echo php -v
+      - run: php -v
       - name: Install
         # Install project
         run: make install
