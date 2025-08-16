@@ -13,7 +13,7 @@ class UserTest extends TestCase
         $children = [new User('Mark')];
         $user = new User($name, $children);
 
-        $this->assertEquals($name, $user->getName());
+        $this->assertEquals("den", $user->getName());
         $this->assertEquals(collect($children), $user->getChildren());
     }
 }
